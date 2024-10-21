@@ -3,20 +3,23 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Helvetica;
     margin: 0;
     padding: 0;
-    color: #333;
+    color: #fff; /* Change text color to white for better contrast */
+    background-color: #000; /* Set body background to black */
 }
 
+
 header {
-    background: white;
-    padding: 20px;
+    background: rgba(0, 0, 0, 0.87); /* Dark background for header */
+    padding: 5px;
     text-align: center;
     position: fixed;
     width: 100%;
     z-index: 10;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(255, 35, 35, 0.1); /* Light shadow for effect */
+    word-spacing: 20vh;
 }
 
 nav ul {
@@ -27,19 +30,21 @@ nav ul {
 nav ul li {
     display: inline;
     margin: 0 15px;
+    font-family: 'Arial';
 }
 
 nav a {
     text-decoration: none;
-    color: #333;
-    font-weight: bold;
+    color: #fff; /* Change link color to white */
+    font-weight: lighter;
 }
 
 .hero {
-    height: 100vh;
+    height: 120vh;
+    width: 100%;
     background-size: cover;
     background-position: center;
-    position: relative;
+    position: top;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,43 +52,151 @@ nav a {
 }
 
 .hero-overlay {
-    background: rgba(0, 0, 0, 0.5);
+    font-size:50mm;
     padding: 20px;
     text-align: center;
 }
 
-.projects {
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.projects h2 {
-    margin-bottom: 20px;
-}
-
-.project-gallery {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.project {
-    width: 300px;
-    height: 200px;
+.research {
     background-size: cover;
     background-position: center;
-    margin: 10px;
+    height: 100vh;
 }
 
 section {
     padding: 60px 20px;
-    background: #f4f4f4;
+    background: #111; /* Dark gray background for sections */
     text-align: center;
 }
 
 footer {
     text-align: center;
     padding: 1em 0;
-    background: #333;
+    background: #000; /* Match footer background to the body */
+    color: #fff; /* Change footer text color to white */
+}
+
+.parallax {
+    /* The image used */
+    background-image: url('images/hero.jpg'); /* Replace with the correct image path */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),
+                       rgba(0, 0, 0, 0.3)), url("images/hero.jpg");
+    /* Allow the background to scroll but at a slower speed */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    /* Set the height of the parallax section */
+    height: 150vh;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    transition: background-position 0.3s ease-out;
+}
+
+
+.parallax-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
+    font-size: 2rem;
+    text-align: center;
+    z-index: 2; /* Ensure content is above the background */
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.parallax2 {
+    /* The image used */
+    background-image: url('images/project1.jpg'); /* Replace with the correct image path */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),
+                       rgba(0, 0, 0, 0.3)), url("images/project1.jpg");
+    /* Allow the background to scroll but at a slower speed */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    /* Set the height of the parallax section */
+    height: 200vh;
+    top:1mm;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    transition: background-position 0.3s ease-out;
+}
+
+.parallax-content2 {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    text-align: center;
+    z-index: 2; /* Ensure content is above the background */
+}
+
+.parallax3 {
+    /* The image used */
+    background-image: url('images/project2.jpg'); /* Replace with the correct image path */
+    /* Allow the background to scroll but at a slower speed */
+     background-image: linear-gradient(rgba(0, 0, 0, 0.1),
+                       rgba(0, 0, 0, 0.1)), url("images/project2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    /* Set the height of the parallax section */
+    height: 200vh;
+    top:1mm;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    transition: background-position 0.3s ease-out;
+}
+
+.parallax-content3 {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    text-align: center;
+    z-index: 2; /* Ensure content is above the background */
+}
+
+.parallax4 {
+    /* The image used */
+    background-image: url('images/project3.jpg'); /* Replace with the correct image path */
+    /* Allow the background to scroll but at a slower speed */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2),
+                       rgba(0, 0, 0.1, 0.2)), url("images/project3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    /* Set the height of the parallax section */
+    height: 200vh;
+    top:1mm;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    transition: background-position 0.3s ease-out;
+}
+
+.parallax-content4 {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    text-align: center;
+    z-index: 2; /* Ensure content is above the background */
 }
