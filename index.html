@@ -3,40 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main Page</title>
+    <title>Modern Website</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to My Website</h1>
+        <h1>My Modern Website</h1>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section id="home">
-            <h2>Home</h2>
-            <p>This is a simple website template to get you started.</p>
-        </section>
+    <section id="home" class="fullscreen-image" style="background-image: url('images/image1.jpg');">
+        <div class="overlay">
+            <h2>Welcome to My World</h2>
+            <p>Your adventure starts here.</p>
+        </div>
+    </section>
 
-        <section id="about">
-            <h2>About</h2>
-            <p>Learn more about what we do.</p>
-        </section>
+    <section id="gallery" class="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-images">
+            <div class="gallery-item" style="background-image: url('images/image2.jpg');"></div>
+            <div class="gallery-item" style="background-image: url('images/image3.jpg');"></div>
+        </div>
+    </section>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Get in touch with us.</p>
-        </section>
-    </main>
+    <section id="about">
+        <h2>About</h2>
+        <p>This is a modern website template featuring beautiful fullscreen images.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>You can reach me at: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+    </section>
 
     <footer>
-        <p>&copy; 2024 My Website</p>
+        <p>&copy; 2024 My Modern Website</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
